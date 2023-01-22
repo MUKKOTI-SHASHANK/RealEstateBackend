@@ -4,6 +4,7 @@ const app = express();
 const userController = require("./routes/userRoute");
 const signupLoginController = require("./routes/signupLoginRoute");
 const cors = require("cors");
+app.use(cors());
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
@@ -28,7 +29,7 @@ app.use(cors());
 
 
 app.get("/", (req, res) => {
-  res.status(200).send("Realestate Backend server By DeepakKumar");
+  res.status(200).send("Realestate Backend server By MUKKOTI SHASHANK");
 });
 
 // app.get("*", (req, res) => {
